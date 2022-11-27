@@ -1,0 +1,18 @@
+void _concat_site_name_com_(char site_name[50], struct site* _site) {
+    char* old_site_name = malloc(sizeof(char*));
+    char com[6];
+    char* https = malloc(sizeof(char*));
+
+    strcpy(https, "https://www.");
+    strcpy(old_site_name, site_name);
+    strcpy(com, ".com/");
+
+    strcat(https, old_site_name);
+    strcat(https, com);
+
+    strcpy(_site -> site_name_com_concat, https);
+
+    /* These free statements avoid memory leaks. */
+    free(old_site_name);
+    free(https);
+}

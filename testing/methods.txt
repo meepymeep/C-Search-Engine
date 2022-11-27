@@ -15,7 +15,7 @@ void _concat_site_name_com_(char site_name[50], struct site* _site) {
 
     strcpy(_site -> site_name_com_concat, https);
 
-    /* These free statements avoid memory leaks. */
+    /* These free statements avoid memory leaks if wasn't obvious. */
     free(old_site_name);
     free(https);
 }

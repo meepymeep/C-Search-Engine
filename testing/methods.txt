@@ -1,3 +1,6 @@
+The reason this is here, is because when I was working on this project. I had to remove all of the header files and restart, so I kept this here
+because this was the most painful thing I coded cause concatenating TWO STRINGS TO ONE STRING IS THE MOST PAINFUL FUCKING THING I'VE DONE IN C, anyway.
+
 void _concat_site_name_com_(char site_name[50], struct site* _site) {
     char* old_site_name = malloc(sizeof(char*));
     char com[6];
